@@ -103,7 +103,7 @@ Use Cases
 
 Use Case Diagram 
 
-<img src="./Ch03/use-case-diagram.jpg" />
+<img src="./Ch03/use-case-diagram.jpg">
 
 User Stories
 
@@ -120,7 +120,7 @@ Conceptual Model
 2. Identify class relationships
 3. Identify class responsibilities - who's job (which class) is it do each thing?
 
-<img src="./Ch04/basic-object-diagram.jpg" />
+<img src="./Ch04/basic-object-diagram.jpg">
 
 > Avoid objects that know too much or do too much (i.e. god object).
 
@@ -128,9 +128,24 @@ Conceptual Model
 
 CRC Cards (Class-Responsibility-Collaboration)
 
-```
-| --- Class Name ------------------|
-| Responsibilities | Collaborators |
-|                  |               |
-|                  |               |
-```
+<img src="./Ch04/crc-card.jpg">
+
+## Ch. 5 Class Diagrams 
+
+A simple class diagram:
+
+<img src="./Ch05/simple-class-diagram.jpg">
+
+A more filled-out class diagram:
+
+<img src="./Ch05/class-diagram.jpg">
+
+`+` means the member is public
+
+`-` means the member is private
+
+Underlined means the member is static
+
+The `[1..*]` suffix means the type is a collection of multilple items of that type. Ex: String[1..*] means some String collection whether that be a `String[]` or a `List<String>`, etc.
+
+> Leave as many class members private as possible
