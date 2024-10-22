@@ -68,3 +68,69 @@ Approach
 
 <img src="./Ch01/class-diagram.jpg"> 
 
+## Ch. 2 Requirements
+
+* Functional requirements - what does it need to do? _The system must do..._
+* Non-functional requirements - legal, performance, support, security. _The system should be..._
+
+FURPS Requirements
+
+* Functionality
+* Usability
+* Reliability
+* Performance
+* Supportability
+
+FURPS+
+* Design 
+* Implementation
+* Interface
+* Physical
+
+## Ch. 3 Use Cases
+
+Use Cases
+1. Title - keep it short
+2. Actor (Human, or computer system)
+3. Success Scenario - written as a regular paragraph, a list of steps, etc.
+
+"Fully-dressed" use cases - many additional categories written out (can add bloat) 
+
+* Who does system administration? 
+* Who manages users and security? 
+* What happens if the system fails? 
+* Is anyone watching the system? 
+
+Use Case Diagram 
+
+<img src="./Ch03/use-case-diagram.jpg" />
+
+User Stories
+
+As a [type of user], I want [some goal], so that [some desired outcome].
+
+* User stories should not contain implementation details
+* User stories should not contain user interface details 
+
+## Ch. 4 Domain Modeling 
+
+Conceptual Model
+
+1. Identify the objects - look at all the nouns.
+2. Identify class relationships
+3. Identify class responsibilities - who's job (which class) is it do each thing?
+
+<img src="./Ch04/basic-object-diagram.jpg" />
+
+> Avoid objects that know too much or do too much (i.e. god object).
+
+> An object should be responsible for itself as much as possible. This makes maintaining and updating your application easier.
+
+CRC Cards (Class-Responsibility-Collaboration)
+
+```
+| --- Class Name ------------------|
+| Responsibilities | Collaborators |
+|                  |               |
+|                  |               |
+```
