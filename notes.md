@@ -152,7 +152,40 @@ The `[1..*]` suffix means the type is a collection of multilple items of that ty
 
 ## Ch. 6 Inheritance and Composition 
 
-Should B inherit from A? Check the statement: B _is_ an A.
+Should A inherit from B? Check the statement: A _is_ a B. Or, A _is a type of_ B.
 
-* Inheritance describes an _"is a"_ relationship. Or, _"is a type of"_
+_Abstract class_ - made to be inherited and cannot be instantiated. 
+_Concrete class_ - made to be instantiated and cannot be inherited. Also known as final, and sealed.
 
+In UML class diagrams, abstract classes are donoted by italicizing the classname.
+
+How to show inheritance in UML: 
+
+<img src="./Ch06/inheritance.jpg">
+
+Interfaces vs. Abstract Classes
+
+* An interface represents a _capability_ a class has 
+* An abstract class represents a _type_ that another class can inherit from 
+
+How to show that a class implements an interface in UML: 
+
+<img src="./Ch06/interface.jpg">
+
+> _"Program to an interface, not an implementation."_
+
+_Aggregation_ - When a class "has a" other class. Also: "Contains a...", "Uses a...", "Uses many...". 
+
+In UML, aggregation is denoted with a diamond at the end of the arrow: 
+
+<img src="./Ch06/aggregation.jpg">
+
+Composition vs. Aggregation 
+
+In aggregation, when the container object is destroyed, the contained object lives on. 
+
+In composition, when the container object is destroyed, the contained object is also destroyed. 
+
+In UML, you show composition using a solid diamond at the end of the arrow: 
+
+<img src="./Ch06/composition.jpg">
