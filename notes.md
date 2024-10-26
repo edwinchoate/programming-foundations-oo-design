@@ -149,3 +149,10 @@ Underlined means the member is static
 The `[1..*]` suffix means the type is a collection of multilple items of that type. Ex: String[1..*] means some String collection whether that be a `String[]` or a `List<String>`, etc.
 
 > Leave as many class members private as possible
+
+## Ch. 6 Inheritance and Composition 
+
+Should B inherit from A? Check the statement: B _is_ an A.
+
+* Inheritance describes an _"is a"_ relationship. Or, _"is a type of"_
+
