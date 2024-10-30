@@ -176,6 +176,8 @@ How to show that a class implements an interface in UML:
 
 _Aggregation_ - When a class "has a" other class. Also: "Contains a...", "Uses a...", "Uses many...". 
 
+> _An aggregation is a collection of objects._
+
 In UML, aggregation is denoted with a diamond at the end of the arrow: 
 
 <img src="./Ch06/aggregation.jpg">
@@ -189,3 +191,57 @@ In composition, when the container object is destroyed, the contained object is 
 In UML, you show composition using a solid diamond at the end of the arrow: 
 
 <img src="./Ch06/composition.jpg">
+
+## Ch. 7 Software Development
+
+SOLID
+
+* **S**ingle Responsibility Principle
+* **O**pen/Close Principle
+* **L**iskov Substitution Principle
+* **I**nterface Segregation Principle
+* **D**ependency Inversion Principle
+
+Single Responsibility Principle
+
+* Avoid creating _god objects_ - monoliths that do a whole lot of things that aren't related to each other
+
+D.R.Y. - don't repeat yourself. Think about it before you use the clipboard. Use single sources of truths.
+
+_You Ain't Gonna Need It_ - don't create abstracts that won't ever be used. 
+
+Static analysis tools can help you find some of these code smells. 
+
+Design Pattern examples 
+
+* _Factory Pattern_ - a creator object is in charge of making objects 
+* _Memento Pattern_ - provides the ability to restore an object to its previous state 
+
+_Design Patterns: Elements of Reusable Object-Oriented Software_ by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides
+
+* Creation Patterns
+    * Abstract Factory 
+    * Builder
+    * Factory Method
+    * Prototype 
+    * Singleton
+* Structural Patterns
+    * Adapter
+    * Bridge
+    * Composite
+    * Decorator
+    * Facade
+    * Flyweight
+    * Proxy
+* Behavioral Patterns
+    * Chain of responsibility 
+    * Command
+    * Interpreter
+    * Iterator
+    * Mediator
+    * Memento
+    * Observer
+    * State
+    * Strategy
+    * Template method
+    * Visitor 
